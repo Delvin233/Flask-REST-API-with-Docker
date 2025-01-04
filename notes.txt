@@ -1,0 +1,20 @@
+Virtual Machine is an emualtion of an OS
+And this approach to virtualizsation is less efficient
+
+
+For this reason Docker Containers we created
+Docker Containers run on the cloud, on linux based system
+They sacrifice efficient over flexibility
+So in a VM we can run windows on a Mac
+but in Docker Containers, the containers run on Linux
+
+Operating Systems
+Made up of the kernel and the files(programs)
+The kernel interacts with and controls the hardware
+
+Noooowwww.... How do we run Docker locally?
+A Linux VM is needed for that 
+Docker Desktop is going to be used (though inefficent since we would be
+        hardware > Windows or Mac > Hypervisor > Linux Vm > Docker > Docker Containers
+)
+We use Docker Images, created from Docerfiles to create the Container
