@@ -17,4 +17,15 @@ A Linux VM is needed for that
 Docker Desktop is going to be used (though inefficent since we would be
         hardware > Windows or Mac > Hypervisor > Linux Vm > Docker > Docker Containers
 )
-We use Docker Images, created from Docerfiles to create the Container
+We use Docker Images, created from Dockerfiles to create the Container
+
+code to build the docker image
+docker build -t flask-smorest-api .
+
+it is for tag
+
+code to run docker with a volume to allow live updates
+docker run -dp 5005:5000 -w /app -v /home/user/Flask-REST-API-with-Docker:/app  flask-smorest-api:latest 
+
+-w is the file were working with 
+-v is the the volume and its where we place the path to our folder so it is incorporated to docker
